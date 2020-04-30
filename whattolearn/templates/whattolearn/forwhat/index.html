@@ -1,0 +1,51 @@
+{% extends "whattolearn/wrapper.html" %}
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Для чего вы хотите изучить программирование?</b></h3>
+    <br>
+    <table class="tabl">
+        <tr>
+            <td class="wrap" align="center">
+                <a href="games/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/games.svg' %}" alt="games">
+                    <p class="inly">Создание игр</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="mobile/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/mobile.svg' %}" alt="mobile">
+                    <p class="inly">Мобильные приложения</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="web/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/web.svg' %}" alt="web">
+                    <p class="inly">Веб разработка</p>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td class="wrap" align="center">
+                <a href="comp/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/comp.svg' %}" alt="comp">
+                    <p class="inly">Софт для компьютеров</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="data/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/data.svg' %}" alt="data">
+                    <p class="inly">Обработка данных</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="robot/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/robot.svg' %}" alt="robot">
+                    <p class="inly">Создание искусственного интеллекта</p>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}

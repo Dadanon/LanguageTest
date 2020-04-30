@@ -1,0 +1,45 @@
+{% extends "whattolearn/wrapper.html" %}
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Под какие платформы вы хотите создавать игры?</b></h3>
+    <br>
+    <table class="tabl">
+        <tr>
+            <td class="wrap" align="center">
+                <a href="mobile/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/games/mobile.svg' %}" alt="mobile">
+                    <p class="inly">Под мобильные телефоны</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="pc_console/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/games/pc_console.svg' %}" alt="pc_console">
+                    <p class="inly">Компьютеры и игровые консоли</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="virtual/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/games/virtual.svg' %}" alt="virtual">
+                    <p class="inly">Виртуальная реальность</p>
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+            </td>
+            <td class="wrap" align="center">
+                <a href="web_game/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/games/web_game.svg' %}" alt="web_game">
+                    <p class="inly">Web игра</p>
+                </a>
+            </td>
+            <td>
+
+            </td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}

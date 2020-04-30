@@ -1,0 +1,31 @@
+{% extends "whattolearn/wrapper.html" %}
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red">Для какого направления нужен вам язык?</h3>
+    <br><br>
+    <table class="tabl" style="border-spacing: 60px 0px">
+        <tr>
+            <td class="wrap" align="center">
+                <a href="freelance/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/web/backend/freelance.svg' %}" alt="freelance">
+                    <p class="inly">Небольшой сайт или фриланс</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="startup/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/web/backend/startup.svg' %}" alt="startup">
+                    <p class="inly">Стартапы и небольшие компании</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="company/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/web/backend/company.svg' %}" alt="company">
+                    <p class="inly">Большие компании</p>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,25 @@
+{% extends "whattolearn/wrapper.html" %}
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red">Под какую платформу вы хотите разрабатывать?</h3>
+    <br><br>
+    <table class="tabl" style="border-spacing: 80px 0px">
+        <tr>
+            <td class="wrap" align="center">
+                <a href="front-end/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/web/frontend.svg' %}" alt="frontend">
+                    <p class="inly">Внешний вид сайта (front-end)</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="backend/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/web/backend.svg' %}" alt="backend">
+                    <p class="inly">Работа с сервером (backend)</p>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}

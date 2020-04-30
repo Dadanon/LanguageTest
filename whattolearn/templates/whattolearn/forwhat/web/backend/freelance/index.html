@@ -1,0 +1,24 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/web/backend/freelance/php.svg' %}" alt="php">
+    <h2>Язык PHP</h2>
+    <br>
+    <p class="descrLang">
+        PHP это наиболее популярный язык для веб программирования. По статистике его <br>
+        используют в более 80% всех веб сайтов мира. Если вам необходимо создать сайт <br>
+        для себя или поработать на фрилансе, то язык идеально вам подойдет <br><br>
+        Язык обладает большим объемом встроенных функций, позволяет выполнять все <br>
+        стандартные задачи, имеет большое комьюнити и легок в изучение. <br><br>
+        Помимо языка PHP вам также потребуется: HTML, CSS, работа с базами данных SQL <br>
+        и немного JavaScript.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

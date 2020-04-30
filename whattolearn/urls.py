@@ -1,0 +1,31 @@
+from django.urls import path, include
+from . import views
+
+urlpatterns = [
+    path('', views.index, name='index'),
+    path('forwhat/', views.forwhat, name='forwhat'),
+    path('forwhat/robot/', views.robot, name='robot'),
+    path('forwhat/data/', views.data, name='data'),
+    path('forwhat/comp/', views.platform, name='platform'),
+    path('forwhat/comp/windows/', views.windows, name='windows'),
+    path('forwhat/comp/macintosh/', views.macintosh, name='macintosh'),
+    path('forwhat/comp/pc_console/', views.pc_console, name='pc_console'),
+    path('forwhat/web/', views.web, name='web'),
+    path('forwhat/web/front-end/', views.frontend, name='frontend'),
+    path('forwhat/web/backend/', views.backend, name='backend'),
+    path('forwhat/web/backend/freelance/', views.freelance, name='freelance'),
+    path('forwhat/web/backend/startup/', views.startup, name='startup'),
+    path('forwhat/web/backend/company/', views.company, name='company'),
+    path('forwhat/mobile/', views.mobile, name='mobile'),
+    path('forwhat/mobile/apple/', views.apple, name='apple'),
+    path('forwhat/mobile/android/', views.android, name='android'),
+    path('forwhat/games/', views.games, name='games'),
+    path('forwhat/games/web_game/', views.web_game, name='web_games'),
+    path('forwhat/games/virtual/', views.virtual, name='virtual'),
+    path('forwhat/games/pc_console/', views.pcconsole, name='pcconsole'),
+    path('forwhat/games/pc_console/simple-game/', views.simple_game, name='simple-game'),
+    path('forwhat/games/pc_console/games/', views.gamespc, name='gamespc'),
+    path('forwhat/games/mobile/', views.gamemob, name='gamemob'),
+    path('forwhat/games/mobile/2D/', views.twoD, name='twoD'),
+    path('forwhat/games/mobile/3D/', views.threeD, name='threeD'),
+]

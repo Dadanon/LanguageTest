@@ -1,0 +1,24 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/web/backend/startup/python.svg' %}" alt="python">
+    <h2>Язык Python</h2>
+    <br>
+    <p class="descrLang">
+        Создатели стартапов зачастую используют различные новомодные технологии, по <br>
+        типу: Django, Node JS, Go, Rust и многие другие языки и технологии, что еще не <br>
+        стали столь популярными, но уже набирают базу поклонников. <br><br>
+        Здесь наиболее удобный вариант языка это Python (и библиотека Django) или же <br>
+        JavaScript (и технология Node JS). Выбирать стоит между Python и JavaScript, при <br>
+        чём выбрать стоит тот, что больше нравится в плане синтаксиса написания кода <br>
+        (лично мы за Python =) ).
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,26 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/web/frontend/javascript.svg' %}" alt="javascript">
+    <h2>Язык JavaScript</h2>
+    <br>
+    <p class="descrLang">
+        Внешний вид сайта или другими словами Front-end, не состоит из лишь одного <br>
+        языка программирования. Для создания внешней части сайта необходимо изучить <br>
+        как минимум: HTML, CSS, SASS, Gulp, Bootstrap и JavaScript. <br><br>
+        Набор не маленький, но это базовый набор для хорошего верстальщика. JavaScript <br>
+        в свою очередь обладает уймой библиотек и фреймворков, которые расширяют <br>
+        его функционал. Начните с базового комплекта и плавно передвигайтесь к <br>
+        изучению React JS, Vue JS, Angular JS и Node JS. Все эти дополнительные <br>
+        технологии не являются обязательными, но обладая навыками работы с ними вы <br>
+        сможете найти более высокооплачиваемую работу.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

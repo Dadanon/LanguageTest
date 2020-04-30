@@ -1,0 +1,25 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/mobile/android/java.svg' %}" alt="java">
+    <h2>Язык Java</h2>
+    <br>
+    <p class="descrLang">
+        Java - это удобный, быстрый и многофункционалный язык, который подходит для <br>
+        множества сфер, начиная от веба и заканчивая созданием игр под мобильные <br>
+        устройства и ПК. <br><br>
+        Язык Java прост в изучении, обладает гигантским количеством библиотек и <br>
+        обширным списком обучающих материалов. Реализация всех Андроид программ <br>
+        зачастую ведётся в Android Studio с использованием языка Java. <br><br>
+        Также советуем обратить внимание на язык Kotlin, который является <br>
+        усовершенствованной версией языка Java.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

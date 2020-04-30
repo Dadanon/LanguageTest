@@ -1,0 +1,21 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/games/pc_console/games/cpp.svg' %}" alt="cpp">
+    <h2>Язык C++</h2>
+    <p class="descrLang">
+        Для создания крупных игр со множеством элемнетов вам стоит изучать язык C++. <br>
+        Язык позволяет написать свой игровой движок или же воспользоваться уже <br>
+        готовыми движками, как например движок Unreal Engine 4. C++ позволяет <br>
+        создавать игры класса ААА, которые считаются наиболее передовыми играми <br>
+        современности.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

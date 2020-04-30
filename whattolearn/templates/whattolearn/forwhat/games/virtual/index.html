@@ -1,0 +1,19 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/games/virtual/csharp.svg' %}" alt="csharp">
+    <h2>Язык JavaScript</h2>
+    <p class="descrLang">
+        Для игр с виртуальной реальностью необходимо изучать язык C#. Используя C#, а <br>
+        также игровой движок Unity, вы сможете создавать полноценные приложения и <br>
+        игры с использованием технологии AR.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

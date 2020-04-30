@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        td {
+            padding: 10px;
+            width: 300px;
+        }
+        .transform {
+          transition: all 0.5s ease-out;
+        }
+        .transform:hover {
+          transform: scale(1.05);
+        }
+        .wrap:hover {
+            background: #fff;
+        }
+        .inly {
+            color: black
+        }
+        .descrLang {
+            font-size: 18px;
+        }
+        body {
+            font-family: Montserrat,sans-serif;
+        }
+        .tabl {
+            border-collapse: separate;
+            border-spacing: 20px;
+        }
+
+    </style>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body style="background: #eeeeee; font-size: 18px">
+    <div align="center" style="width: 45%; margin: auto; padding-top: 100px">
+        <h1>Какой язык программирования учить?</h1>
+        <br>
+        <div style="line-height: 0.7">
+            <p>Хотите начать изучение программирования, но не знаете с чего начать? Пройдите</p>
+            <p>небольшой тест, в котором вы узнаете наиболее подходящий для вас язык</p>
+            <p>программирования!</p>
+        </div>
+    </div>
+    <br><br>
+    {% block content %}
+
+    {% endblock %}
+    <br>
+</body>
+</html>

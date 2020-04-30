@@ -1,0 +1,23 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red">Мы подобрали подходящий для вас язык программирования!</h3>
+    <br><br>
+    <img src="{% static 'image/comp/pc_console/java.svg' %}" alt=java">
+    <h2>Язык Java</h2>
+    <br>
+    <p class="descrLang">
+        Java - это удобный, быстрый и многофункционалный язык, который может <br>
+        выполняться вне зависимости от операционной системы, будь то Windows, Mac или <br>
+        Linux. <br><br>
+        Это свойство полюбили многие компании, которые используют данный язык для <br>
+        разработки своих приложений под ПК. Язык Java это один из лучших вариантов <br>
+        для создания кроссплатформенных приложений.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/mobile/apple/swift.svg' %}" alt="swift">
+    <h2>Язык Swift</h2>
+    <br>
+    <p class="descrLang">
+        Разработка приложений и игр для iOS и Macintosh производится на языке <b>Swift</b>. <br>
+        Язык продвигается компанией Apple, поэтому его популярность постоянно растет. <br>
+        Язык имеет простой синтаксис, удобную среду разработки и большую <br>
+        функциональность, что позволяет создавать проекты любой сложности.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

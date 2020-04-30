@@ -1,0 +1,25 @@
+{% extends "whattolearn/wrapper.html" %}
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red">Под какую платформу вы хотите писать программы?</h3>
+    <br><br>
+    <table class="tabl" style="border-spacing: 60px 0px">
+        <tr>
+            <td class="wrap" align="center">
+                <a href="apple/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/mobile/apple.svg' %}" alt="apple">
+                    <p class="inly">iOS</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="android/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/mobile/android.svg' %}" alt="android">
+                    <p class="inly">Андроид</p>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/robot/python.svg' %}" alt="python">
+    <h2>Язык Python</h2>
+    <p class="descrLang">
+        Python обладает большим набором библиотек, позволяющих обрабатывать <br>
+        большие потоки информации. Изучение Python для данной сферы считается <br>
+        наиболее хорошим вариантом, так как в сети Интернет вы найдете много <br>
+        обучающего материала, а сам язык не составит для вас больших проблем в плане <br>
+        изучения. <br><br>
+        Если легкие пути вас не интересуют, то вам стоит погрузиться в язык <br>
+        программирования <b style="color: red">R</b>. Данный язык был специально разработан для обработки <br>
+        больших объемов данных
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

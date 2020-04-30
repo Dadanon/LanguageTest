@@ -1,0 +1,20 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/games/mobile/simple-game/unity.svg' %}" alt="unity">
+    <h2>Движок Unity</h2>
+    <p class="descrLang">
+        Реализация мобильных игр намного удобнее при помощи игровых движков. Для <br>
+        создания 2D игр под мобильные устройства стоит использовать игровой движок <br>
+        Unity или <b>GameMaker</b>. Они позволяет создавать игры сразу под несколько <br>
+        платформ (iOS, Android) и обладают большим набором функционала.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

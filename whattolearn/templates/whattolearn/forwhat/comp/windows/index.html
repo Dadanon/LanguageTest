@@ -1,0 +1,22 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red">Мы подобрали подходящий для вас язык программирования!</h3>
+    <br><br>
+    <img src="{% static 'image/comp/windows/csharp.svg' %}" alt="csharp">
+    <h2>Язык C#</h2>
+    <br>
+    <p class="descrLang">
+        Язык C# был разработан компанией Microsoft и он идеально подходит для <br>
+        создания программ под Windows. Компания Microsoft всячески продвигает этот <br>
+        язык, обновляет и старается разрабатывать все приложения на нём. Изучение этого <br>
+        языка позволит вам создавать программы под Windows и запускать их на любом <br>
+        компьютере с ОС Microsoft.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}

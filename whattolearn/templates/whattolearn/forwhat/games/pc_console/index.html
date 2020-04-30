@@ -1,0 +1,24 @@
+{% extends "whattolearn/wrapper.html" %}
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Какой тип игры вы бы хотели разрабатывать?</b></h3>
+    <br>
+    <table class="tabl" style="border-spacing: 60px 0px">
+        <tr>
+            <td class="wrap" align="center">
+                <a href="simple-game/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/games/pc_console/simple-game.svg' %}" alt="simple-game">
+                    <p class="inly">Небольшие игры</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="games/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/games/pc_console/games.svg' %}" alt="games">
+                    <p class="inly">Крупные проекты</p>
+                </a>
+            </td>
+    </table>
+</div>
+
+{% endblock %}

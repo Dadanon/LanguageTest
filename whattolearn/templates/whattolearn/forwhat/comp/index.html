@@ -1,0 +1,31 @@
+{% extends "whattolearn/wrapper.html" %}
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red">Под какую платформу вы хотите разрабатывать?</h3>
+    <br><br>
+    <table class="tabl">
+        <tr>
+            <td class="wrap" align="center">
+                <a href="windows/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/comp/windows.svg' %}" alt="windows">
+                    <p class="inly">Windows</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="macintosh/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/comp/macintosh.svg' %}" alt="macintosh">
+                    <p class="inly">Mac</p>
+                </a>
+            </td>
+            <td class="wrap" align="center">
+                <a href="pc_console/" style="text-decoration: none; color=black">
+                    <img class="transform" src="{% static 'image/comp/pc_console.svg' %}" alt="pc_console">
+                    <p class="inly">Все платформы</p>
+                </a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+{% endblock %}

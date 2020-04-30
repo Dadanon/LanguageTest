@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Выбери свой язык программирования</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+</head>
+<body style="padding-top: 10%">
+    <div align="left" style="width: 20%; margin: auto">
+        <h2>Тест на выбор языка</h2>
+        <br>
+        <div style="line-height: 0.8">
+            <p>Не знаете какой язык изучать? Пройдите</p>
+            <p>быстрый тест и определите какой язык</p>
+            <p>программирования подходит именно вам!</p>
+        </div>
+        <br>
+        <form action="forwhat">
+            <button class="btn btn-danger" style="width: 100%">Пройти тест</button>
+        </form>
+    </div>
+</body>
+</html>

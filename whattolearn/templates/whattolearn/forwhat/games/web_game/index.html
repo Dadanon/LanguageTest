@@ -1,0 +1,19 @@
+{% extends 'whattolearn/wrapper.html' %}
+
+{% block content %}
+{% load static %}
+<div align="center">
+    <h3 class="heading" style="color: red"><b>Мы подобрали подходящий для вас язык программирования!</b></h3>
+    <br><br>
+    <img src="{% static 'image/games/web_game/javascript.svg' %}" alt="javascript">
+    <h2>Язык JavaScript</h2>
+    <p class="descrLang">
+        Для создания веб игр можно использовать игровые движки, такие как Unity или же <br>
+        писать игру с чистого листа на языке JavaScript. Для построения подобных игр вам <br>
+        необходимо изучить: HTML, CSS, JS и технологию Canvas.
+    </p>
+    <br>
+    <a href="/forwhat"><button type="button" class="btn btn-danger">Начать заново</button></a>
+</div>
+
+{% endblock %}
